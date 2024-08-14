@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <div className="md:grid grid-cols-6 gap-4 max-h-screen">
+            <div className="lg:grid grid-cols-6 gap-4 max-h-screen">
                 <div className="col-span-1">
                     <FirstColumn></FirstColumn>
                 </div>
