@@ -1,5 +1,6 @@
-import {  FaHatCowboy } from "react-icons/fa";
+import {  FaHatCowboy, FaStickyNote } from "react-icons/fa";
 import { FaBarsProgress } from "react-icons/fa6";
+import { MdQuiz } from "react-icons/md";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const data = [
@@ -78,29 +79,33 @@ const ThirdColumn = () => {
         </div>
       </div>
       <div className="overflow-x-auto">
-  <table className="table">
+  <table className="table w-full">
     {/* head */}
     <thead>
       <tr>
-        <th>
-          <label>
-            <input type="checkbox" className="checkbox" />
-          </label>
-        </th>
-        <th>Name</th>
-        <th>Job</th>
-        <th>Favorite Color</th>
-        <th></th>
+        <th>Type</th>
+        <th>Due</th>
+        <th>Faculty</th>
+        <th>Status</th>
       </tr>
     </thead>
     <tbody>
       {/* row 1 */}
       <tr>
-        <th>
-          <label>
-            <input type="checkbox" className="checkbox" />
-          </label>
-        </th>
+        <td>
+          <div className="flex items-center gap-3">
+            <div className="avatar">
+              <div className="mask mask-squircle h-12 w-12">
+              <FaStickyNote className="text-4xl text-blue-500"></FaStickyNote>
+              </div>
+            </div>
+            <div>
+              <div className="font-bold">Assignment -1</div>
+              <div className="text-sm opacity-50">Foundations of User Experience</div>
+            </div>
+          </div>
+        </td>
+        <td>5 June 2024</td>
         <td>
           <div className="flex items-center gap-3">
             <div className="avatar">
@@ -111,28 +116,30 @@ const ThirdColumn = () => {
               </div>
             </div>
             <div>
-              <div className="font-bold">Hart Hagerty</div>
-              <div className="text-sm opacity-50">United States</div>
+              <div className="font-bold">Same Jhon</div>
             </div>
           </div>
         </td>
         <td>
-          Zemlak, Daniel and Leannon
-          <br />
-          <span className="badge badge-ghost badge-sm">Desktop Support Technician</span>
+          <span className="badge badge-primary">Done</span>
         </td>
-        <td>Purple</td>
-        <th>
-          <button className="btn btn-ghost btn-xs">details</button>
-        </th>
       </tr>
       {/* row 2 */}
       <tr>
-        <th>
-          <label>
-            <input type="checkbox" className="checkbox" />
-          </label>
-        </th>
+        <td>
+          <div className="flex items-center gap-3">
+            <div className="avatar">
+              <div className="mask mask-squircle h-12 w-12">
+              <MdQuiz className="text-4xl text-blue-500"></MdQuiz>
+              </div>
+            </div>
+            <div>
+              <div className="font-bold">Quiz - 2</div>
+              <div className="text-sm opacity-50">Foundations of User Experience</div>
+            </div>
+          </div>
+        </td>
+        <td>5 Aug 2024</td>
         <td>
           <div className="flex items-center gap-3">
             <div className="avatar">
@@ -143,98 +150,184 @@ const ThirdColumn = () => {
               </div>
             </div>
             <div>
-              <div className="font-bold">Brice Swyre</div>
-              <div className="text-sm opacity-50">China</div>
+              <div className="font-bold">Jhon Ab</div>
             </div>
           </div>
         </td>
         <td>
-          Carroll Group
-          <br />
-          <span className="badge badge-ghost badge-sm">Tax Accountant</span>
+          <span className="badge badge-warning">Coming</span>
         </td>
-        <td>Red</td>
-        <th>
-          <button className="btn btn-ghost btn-xs">details</button>
-        </th>
       </tr>
-      {/* row 3 */}
       <tr>
-        <th>
-          <label>
-            <input type="checkbox" className="checkbox" />
-          </label>
-        </th>
+        <td>
+          <div className="flex items-center gap-3">
+            <div className="avatar">
+              <div className="mask mask-squircle h-12 w-12">
+              <FaStickyNote className="text-4xl text-blue-500"></FaStickyNote>
+              </div>
+            </div>
+            <div>
+              <div className="font-bold">Assignment -1</div>
+              <div className="text-sm opacity-50">Foundations of User Experience</div>
+            </div>
+          </div>
+        </td>
+        <td>5 June 2024</td>
         <td>
           <div className="flex items-center gap-3">
             <div className="avatar">
               <div className="mask mask-squircle h-12 w-12">
                 <img
-                  src="https://img.daisyui.com/images/profile/demo/4@94.webp"
+                  src="https://img.daisyui.com/images/profile/demo/2@94.webp"
                   alt="Avatar Tailwind CSS Component" />
               </div>
             </div>
             <div>
-              <div className="font-bold">Marjy Ferencz</div>
-              <div className="text-sm opacity-50">Russia</div>
+              <div className="font-bold">Same Jhon</div>
             </div>
           </div>
         </td>
         <td>
-          Rowe-Schoen
-          <br />
-          <span className="badge badge-ghost badge-sm">Office Assistant I</span>
+          <span className="badge badge-primary">Done</span>
         </td>
-        <td>Crimson</td>
-        <th>
-          <button className="btn btn-ghost btn-xs">details</button>
-        </th>
       </tr>
-      {/* row 4 */}
       <tr>
-        <th>
-          <label>
-            <input type="checkbox" className="checkbox" />
-          </label>
-        </th>
+        <td>
+          <div className="flex items-center gap-3">
+            <div className="avatar">
+              <div className="mask mask-squircle h-12 w-12">
+              <MdQuiz className="text-4xl text-blue-500"></MdQuiz>
+              </div>
+            </div>
+            <div>
+              <div className="font-bold">Quiz - 2</div>
+              <div className="text-sm opacity-50">Foundations of User Experience</div>
+            </div>
+          </div>
+        </td>
+        <td>5 Aug 2024</td>
         <td>
           <div className="flex items-center gap-3">
             <div className="avatar">
               <div className="mask mask-squircle h-12 w-12">
                 <img
-                  src="https://img.daisyui.com/images/profile/demo/5@94.webp"
+                  src="https://img.daisyui.com/images/profile/demo/3@94.webp"
                   alt="Avatar Tailwind CSS Component" />
               </div>
             </div>
             <div>
-              <div className="font-bold">Yancy Tear</div>
-              <div className="text-sm opacity-50">Brazil</div>
+              <div className="font-bold">Jhon Ab</div>
             </div>
           </div>
         </td>
         <td>
-          Wyman-Ledner
-          <br />
-          <span className="badge badge-ghost badge-sm">Community Outreach Specialist</span>
+          <span className="badge badge-warning">Coming</span>
         </td>
-        <td>Indigo</td>
-        <th>
-          <button className="btn btn-ghost btn-xs">details</button>
-        </th>
+      </tr>
+      <tr>
+        <td>
+          <div className="flex items-center gap-3">
+            <div className="avatar">
+              <div className="mask mask-squircle h-12 w-12">
+              <FaStickyNote className="text-4xl text-blue-500"></FaStickyNote>
+              </div>
+            </div>
+            <div>
+              <div className="font-bold">Assignment -1</div>
+              <div className="text-sm opacity-50">Foundations of User Experience</div>
+            </div>
+          </div>
+        </td>
+        <td>5 June 2024</td>
+        <td>
+          <div className="flex items-center gap-3">
+            <div className="avatar">
+              <div className="mask mask-squircle h-12 w-12">
+                <img
+                  src="https://img.daisyui.com/images/profile/demo/2@94.webp"
+                  alt="Avatar Tailwind CSS Component" />
+              </div>
+            </div>
+            <div>
+              <div className="font-bold">Same Jhon</div>
+            </div>
+          </div>
+        </td>
+        <td>
+          <span className="badge badge-primary">Done</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div className="flex items-center gap-3">
+            <div className="avatar">
+              <div className="mask mask-squircle h-12 w-12">
+              <FaStickyNote className="text-4xl text-blue-500"></FaStickyNote>
+              </div>
+            </div>
+            <div>
+              <div className="font-bold">Assignment -1</div>
+              <div className="text-sm opacity-50">Foundations of User Experience</div>
+            </div>
+          </div>
+        </td>
+        <td>5 June 2024</td>
+        <td>
+          <div className="flex items-center gap-3">
+            <div className="avatar">
+              <div className="mask mask-squircle h-12 w-12">
+                <img
+                  src="https://img.daisyui.com/images/profile/demo/2@94.webp"
+                  alt="Avatar Tailwind CSS Component" />
+              </div>
+            </div>
+            <div>
+              <div className="font-bold">Same Jhon</div>
+            </div>
+          </div>
+        </td>
+        <td>
+          <span className="badge badge-primary">Done</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div className="flex items-center gap-3">
+            <div className="avatar">
+              <div className="mask mask-squircle h-12 w-12">
+              <FaStickyNote className="text-4xl text-blue-500"></FaStickyNote>
+              </div>
+            </div>
+            <div>
+              <div className="font-bold">Assignment -1</div>
+              <div className="text-sm opacity-50">Foundations of User Experience</div>
+            </div>
+          </div>
+        </td>
+        <td>5 June 2024</td>
+        <td>
+          <div className="flex items-center gap-3">
+            <div className="avatar">
+              <div className="mask mask-squircle h-12 w-12">
+                <img
+                  src="https://img.daisyui.com/images/profile/demo/2@94.webp"
+                  alt="Avatar Tailwind CSS Component" />
+              </div>
+            </div>
+            <div>
+              <div className="font-bold">Same Jhon</div>
+            </div>
+          </div>
+        </td>
+        <td>
+          <span className="badge badge-primary">Done</span>
+        </td>
       </tr>
     </tbody>
-    {/* foot */}
-    <tfoot>
-      <tr>
-        <th></th>
-        <th>Name</th>
-        <th>Job</th>
-        <th>Favorite Color</th>
-        <th></th>
-      </tr>
-    </tfoot>
   </table>
 </div>
+
+
       </div>
     );
 };
